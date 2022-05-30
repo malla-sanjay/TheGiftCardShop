@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GiftCardShop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="catalog_20049025.xsd">
+    <ShopName>
+        The Gift Card Store
+    </ShopName>
+    <LogoImage></LogoImage>
+    <PhoneNumber serviceProvider="NTC">9860129294</PhoneNumber>
+    <EmailAddress>thegiftcardstore@gmail.com</EmailAddress>
+    <GiftCards>
+
+        <GiftCard type='digital' cardID='CRD10'>
+            <CardImage/>
+            <Company registered='yes' website='www.nintendo.com'>Nintendo</Company>
+            <SNNumber>NI002</SNNumber>
+            <UniqueCode>845-091-0000</UniqueCode>
+            <Category>
+                <TopUp currency="USD">7.99</TopUp>
+            </Category>
+            <Price currency='USD'>8</Price>
+            <Description>This Nintendo Gift card offers 3 months of membership on the users Nintendo account. If the membership is not accepted, the top up ammount maybe used in purchasing ingame items.</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2024-01-12</ExpirationDate>
+        </GiftCard>
+
+         <GiftCard type='digital' cardID='CRD08'>
+            <CardImage/>
+            <Company registered='yes' website='www.riotgames.com' branch='Valorant'>Riot Games</Company>
+            <SNNumber>VA092</SNNumber>
+            <UniqueCode>045-098-0007</UniqueCode>
+            <Category>
+                <TopUp currency="USD">20</TopUp>
+            </Category>
+            <Price currency='USD'>21.99</Price>
+            <Description>This Valorant top up card credits the user with USD $20 worth of in game currency for the users account.</Description>
+            <IssueDate>2021-09-12</IssueDate>
+            <ExpirationDate>2022-09-12</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='digital' cardID='CRD01'>
+            <CardImage/>
+            <Company registered='yes' website='www.amazon.com' branch='Kindle'>Amazon</Company>
+            <SNNumber>AZ001</SNNumber>
+            <UniqueCode>001-200-1234</UniqueCode>
+            <Category>
+                <Discount type='amount' currency='USD'>10</Discount>
+            </Category>
+            <Price currency='USD'>11.99</Price>
+            <NoOfUse>2</NoOfUse>
+            <Description>This amazon kindle discount card offers a discount of $10 on the purchase of any of the kindle cart above $50.</Description>
+            <IssueDate>2021-01-02</IssueDate>
+            <ExpirationDate>2022-01-02</ExpirationDate>
+        </GiftCard>
+        
+        <GiftCard type='digital' cardID='CRD02'>
+            <CardImage/>
+            <Company registered='yes' website='www.microsoft.com' branch='xbox'>XBox</Company>
+            <SNNumber>XB001</SNNumber>
+            <UniqueCode>234-111-3456</UniqueCode>
+            <Category>
+                <TopUp currency="AUD">60</TopUp>
+            </Category>
+            <Price currency='AUD'>75.99</Price>
+            <Description>This XBox Giftcard Offerers AUD $60 recharge on the users XBox account. This ammount can be used for purchasing any games available on XBox games.</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2023-01-12</ExpirationDate>
+        </GiftCard>
+        
+        <GiftCard type='digital' cardID='CRD03'>
+            <CardImage/>
+            <Company registered='yes' website='www.epicgames.com'>Epic Games</Company>
+            <SNNumber>EG001</SNNumber>
+            <UniqueCode>245-161-1237</UniqueCode>
+            <Category>
+                <TopUp currency="USD">50</TopUp>
+            </Category>
+            <Price currency='USD'>50.99</Price>
+            <Description>This Epic games Giftcard Offerers USD $25 recharge on the users Epic Games account. This ammount can be used for purchasing any Games and available on the Epic Games store.</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2023-01-12</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='physical' cardID='CRD04'>
+            <CardImage/>
+            <Company registered='yes' website='www.walmart.com'>Walmart</Company>
+            <SNNumber>WL001</SNNumber>
+            <UniqueCode>285-091-1037</UniqueCode>
+            <Category>
+                <Discount type='percentage'>10</Discount>
+            </Category>
+            <Price currency='USD'>30</Price>
+            <NoOfUse>3</NoOfUse>
+            <Description>On the occasion of Newyear, this walmart discount offers the 10% discount on any purchase above USD $100. Valid till the first weekend of year 2021.</Description>
+            <IssueDate>2021-01-01</IssueDate>
+            <ExpirationDate>2021-01-03</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='physical' cardID='CRD05'>
+            <CardImage/>
+            <Company registered='no'>Whole Foods</Company>
+            <SNNumber>FM001</SNNumber>
+            <UniqueCode>905-001-1007</UniqueCode>
+            <Category>
+                <Discount type='percentage'>5</Discount>
+            </Category>
+            <Price currency='USD'>15</Price>
+            <NoOfUse>5</NoOfUse>
+            <Description>This Whole foods discount cuppon offers 5% discount on any purchase above NRS 25000.</Description>
+            <IssueDate>2022-01-01</IssueDate>
+            <ExpirationDate>2021-02-01</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='digital' cardID='CRD06'>
+            <CardImage/>
+            <Company registered='yes' website='www.Apple.com' branch='Apple App Store'>Apple</Company>
+            <SNNumber>AP091</SNNumber>
+            <UniqueCode>245-181-0237</UniqueCode>
+            <Category>
+                <TopUp currency="USD">5.99</TopUp>
+            </Category>
+            <Price currency='USD'>7</Price>
+            <Description>This Apple App Store Giftcard Offerers USD $5.99 recharge on the users Apple ID. This ammount can be used for only purchasing applications available on the Apple App Store.</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2024-01-12</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='digital' cardID='CRD07'>
+            <CardImage/>
+            <Company registered='no' branch='Local Grocery'>Local Grocery</Company>
+            <SNNumber>LG001</SNNumber>
+            <UniqueCode>001-260-1934</UniqueCode>
+            <Category>
+                <Discount type='amount' currency='USD'>25.99</Discount>
+            </Category>
+            <Price currency='USD'>30</Price>
+            <Description>The promo code offered by Local Grocery offers USD $25.99 on any purchase above USD $100 for the first week of grand opening</Description>
+            <IssueDate>2021-01-02</IssueDate>
+            <ExpirationDate>2022-01-08</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='digital' cardID='CRD09'>
+            <CardImage/>
+            <Company registered='yes' website='www.ebay.com'>Ebay</Company>
+            <SNNumber>EB002</SNNumber>
+            <UniqueCode>945-101-0000</UniqueCode>
+            <Category>
+                <TopUp currency="USD">10</TopUp>
+            </Category>
+            <Price currency='USD'>10.99</Price>
+            <Description>This Ebay giftcard offers the user USD $10 top up on their ebay accounts .</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2024-01-12</ExpirationDate>
+        </GiftCard>
+
+        <GiftCard type='digital' cardID='CRD11'>
+            <CardImage/>
+            <Company registered='yes' website='www.nintendo.com' branch='EStore'>Nintendo</Company>
+            <SNNumber>NE002</SNNumber>
+            <UniqueCode>945-191-0080</UniqueCode>
+            <Category>
+                <TopUp currency="USD">10</TopUp>
+            </Category>
+            <Price currency='USD'>10.99</Price>
+            <Description>This Nintendo giftcard offers the user USD $10 top up on their Nintendo account. The user may use this amount to pruchase any games on Nintendo Eshop .</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2024-01-12</ExpirationDate>
+        </GiftCard>
+
+         <GiftCard type='digital' cardID='CRD12'>
+            <CardImage/>
+            <Company registered='yes' website='www.Subway.com'>Subway</Company>
+            <SNNumber>SB002</SNNumber>
+            <UniqueCode>000-198-0080</UniqueCode>
+            <Category>
+                <Discount type='percentage'>5</Discount>
+            </Category>
+            <Price currency='USD'>10.99</Price>
+            <NoOfUse>2</NoOfUse>
+            <Description>This Subway discount voucher provides 5% off on any purchase above $100 worth of meal on any subway food stations.</Description>
+            <IssueDate>2021-09-22</IssueDate>
+            <ExpirationDate>2025-01-12</ExpirationDate>
+        </GiftCard>
+
+    </GiftCards>
+</GiftCardShop>

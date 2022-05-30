@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*nav bar styling starts from here*/
+header {
+    display: flex;
+    width: 100%;
+    background-color: #002043;
+    padding-right: 5%;
+    padding-left: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+LogoImage img {
+    height: 130px;
+    width: 130px;
+}
+
+ShopName {
+    font-size: 56px;
+    color: #bea44c;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+header ShopName:hover {
+    font-size: 60px;
+    color: gold;
+    transition: 0.4s;
+}
+
+.shopInfo {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    color: rgb(190, 164, 76);
+    
+}
+
+.shopInfo a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #bea44c;
+}
+
+.shopInfo a:hover {
+    color: gold;
+}
+
+/*Body styling starts from here*/
+.main {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+/*individual giftcard styling*/
+.tall CardImage img {
+    height: 60vh;
+    width: 38vh;
+    transition: 0.5s ease;
+}
+
+GiftCards{
+    display: flex;
+    flex-flow: wrap;
+}
+
+GiftCard{
+    display: flex;
+    max-width: 50%;
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+
+GiftCard .details{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+CardImage img:hover{
+    transition: 0.5s;
+    height: 70vh;
+    width: 44vh;
+}
+
+Company, SNNumber{
+    flex-grow: inherit;
+    font-size: 35px;
+}
+
+Description {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+footer {
+    background-color: #002043;
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    color: #bea44c;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}

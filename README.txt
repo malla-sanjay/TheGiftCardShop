@@ -1,0 +1,1 @@
+Please ensure that Images folder is within sane the directory as catalog_20049025.html before opening it.

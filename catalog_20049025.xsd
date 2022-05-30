@@ -1,0 +1,145 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--Attribute that are reused alot for reference-->
+    <xs:attribute name='currency'>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:pattern value="USD|AUD|NRS"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+<!--Root element starts here-->
+  <xs:element name="GiftCardShop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="ShopName"/>
+        <xs:element type="xs:string" name="LogoImage"/>
+        <xs:element name="PhoneNumber">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:long">
+                <xs:attribute type="xs:string" name="serviceProvider" use="required" fixed='NTC'/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmailAddress">
+            <xs:simpleType> 
+            <xs:restriction base="xs:string"> 
+                <!--Regex for email validation -->
+                <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+            </xs:restriction> 
+            </xs:simpleType>
+        </xs:element>
+        <xs:element name="GiftCards">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GiftCard" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="CardImage"/>
+                    <xs:element name="Company">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="registered" use="optional" default="no">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:pattern value="yes|no"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute type="xs:anyURI" name="website" use="optional"/>
+                            <xs:attribute type="xs:string" name="branch" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SNNumber">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:ID">
+                                <!--5 digit code restriction-->
+                                <xs:pattern value="[a-zA-Z0-9]{5}"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="UniqueCode">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <!--5 digit code restriction-->
+                                <xs:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Category">
+                      <xs:complexType>
+                        <xs:choice>
+                          <xs:element name="TopUp">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute ref='currency' use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Discount">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="type" use="required">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="percentage"/>
+                                            <xs:enumeration value="amount"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                   </xs:attribute>
+                                  <xs:attribute ref="currency" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Price">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:decimal">
+                            <xs:attribute ref="currency" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:byte" name="NoOfUse" minOccurs="0"/>
+                    <xs:element type="xs:string" name="Description"/>
+                    <xs:element type="xs:date" name="IssueDate"/>
+                    <xs:element type="xs:date" name="ExpirationDate"/>
+                  </xs:sequence>
+                  <xs:attribute name="type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                            <xs:enumeration value="digital"/>
+                            <xs:enumeration value="physical"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                  <xs:attribute name="cardID" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:ID">
+                            <!--5 digit code restriction-->
+                            <xs:pattern value="[a-zA-Z0-9]{5}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
